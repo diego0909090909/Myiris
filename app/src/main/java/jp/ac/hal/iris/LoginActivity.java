@@ -23,10 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         activitySetup();
     }
     private void activitySetup(){
-        EditText email = findViewById(R.id.email);
-        EditText passWord = findViewById(R.id.password);
-        Button login = findViewById(R.id.loginButton);
-        TextView createAccount = findViewById(R.id.createAccount);
+        EditText email;
+        email = findViewById(R.id.email);
+        EditText passWord;
+        passWord= findViewById(R.id.password);
+        Button login;
+        login= findViewById(R.id.loginButton);
+        TextView createAccount;
+        createAccount= findViewById(R.id.createAccount);
         login.setOnClickListener(v -> {
             //入力欄が空欄でないか確認
             if (!email.toString().isEmpty()) {
@@ -39,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Intent intent = getIntent();
                                     setResult(RESULT_CODE_LOGIN, intent);
-                                    intent = new Intent(this, MainActivity.class);
+                                    intent = new Intent(this, HomeActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }else {
@@ -53,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 email.setError("必須項目です");
             }
         });
+
         createAccount.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
             resultLauncher.launch(intent);

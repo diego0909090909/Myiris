@@ -49,7 +49,7 @@
         android:layout_height="100dp"></Space>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start_bt"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
