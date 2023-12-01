@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">iris</string>
-
-    <string name="txt_login">Taskun</string>
+    //ログイン
+    <string name="login_title">ログイン</string>
     <string name="login_id">メールアドレス</string>
     <string name="login_pass">パスワード</string>
     <string name="log_bt">ログイン</string>
     <string name="signup_bt">新規登録</string>
-
+    //新規登録
     <string name="txt_signup">新規登録</string>
     <string name="sign_id">メールアドレス</string>
     <string name="sign_pass">パスワード</string>
