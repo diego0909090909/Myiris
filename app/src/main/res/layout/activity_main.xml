@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="194dp"
         android:orientation="vertical"
-        app:srcCompat="@drawable/Logo"
+        app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="110dp"
         tools:layout_editor_absoluteY="69dp" />
 
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="120dp"></Space>
+        android:layout_height="100dp"></Space>
 
     <TextView
         android:id="@+id/textView3"
@@ -46,13 +46,15 @@
         android:text="@string/info2" />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="120dp"></Space>
+        android:layout_height="100dp"></Space>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:text="@string/start_bt" />
+        android:background="@drawable/button_2"
+        android:text="@string/start_bt"
+        app:backgroundTint="@null" />
 
 </LinearLayout>
